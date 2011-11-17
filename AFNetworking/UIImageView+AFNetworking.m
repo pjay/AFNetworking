@@ -111,6 +111,8 @@ static char kAFImageRequestOperationObjectKey;
                 } else {
                     self.image = placeholderImage;
                 }
+                
+                self.af_imageRequestOperation = nil;
             }            
         } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
             self.af_imageRequestOperation = nil;
